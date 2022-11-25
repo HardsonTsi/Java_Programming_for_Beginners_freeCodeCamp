@@ -2,10 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int number = 55;
+       String litteralString1 = "abc";
+       String litteralString2  = "abc";
 
-        System.out.println(number++);
-        System.out.println(++number);
+       String objectString1 = new String("xyz");
+       String objectString2 = new String("xyz");
+
+        System.out.println(litteralString1 == litteralString2);
+
+        System.out.println(objectString1 == objectString2);
 
     }
 
