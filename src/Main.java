@@ -1,12 +1,17 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        String string = "The sky is blue";
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(string.replace("blue", "red"));
+        System.out.print("What is your name ?: ");
+        String name = scanner.nextLine();
 
-        System.out.println(string.contains("y"));
+        System.out.printf("Hello %s how are you ?", name);
+
+        scanner.close();
 
     }
 
