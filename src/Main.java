@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class Main {
 
@@ -13,18 +12,14 @@ public class Main {
         numbers.add(4);
         numbers.add(5);
 
+        System.out.println("before: " + numbers);
 
-        numbers.sort(Comparator.naturalOrder());
-        System.out.println(numbers.toString());
+        numbers.forEach(number -> {
+            numbers.set(numbers.indexOf(number), number * 2);
+        });
 
-        numbers.sort(Comparator.reverseOrder());
-        System.out.println(numbers.toString());
+        System.out.println("after: " + numbers);
 
-        System.out.println(numbers.isEmpty());
-
-        System.out.println(numbers.contains(Integer.valueOf(1)));
-
-        System.out.println(numbers.size());
 
     }
 }
