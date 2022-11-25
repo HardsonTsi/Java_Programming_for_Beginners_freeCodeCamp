@@ -1,20 +1,17 @@
-import java.util.HashMap;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        HashMap<String, Integer> examScores = new HashMap<>();
+        User user = new User("TESSI Hardson", "2002-02-24");
 
-        examScores.put("Math", 75);
-        examScores.put("Sociology", 85);
-        examScores.put("English", 95);
-        examScores.put("Bengali", 100);
-        examScores.put("Computer programming", 100);
+        Book book = new Book("My father", "Hardson TESSI", 270);
 
-        examScores.forEach((key, value) -> {
-            System.out.printf("%s --> %d\n", key, value);
-        });
+        AudioBook audioBook = new AudioBook("Dracula", "Bram Stoker", 30000);
+
+        user.borrow(book);
+
+        System.out.println(user);
+        System.out.printf("%s has borrowed these books: %s", user.getName(), user.getBooks().toString());
 
     }
 }
