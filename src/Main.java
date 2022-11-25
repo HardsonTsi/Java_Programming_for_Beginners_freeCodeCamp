@@ -2,17 +2,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int numbers[] = {1, 2, 3, 4, 5};
+        int number = 5;
+        int multiplier = 1;
 
-        int sum = 0;
-
-        for (int number :
-                numbers) {
-            System.out.println(number);
-            sum += number;
+        //while
+        while (multiplier <= 10) {
+            System.out.printf("%d X %d = %d \n", number, multiplier, multiplier * number);
+            multiplier++;
         }
 
-        System.out.printf("sum = %d", sum);
+
+        //do while
+        do {
+            System.out.printf("%d X %d = %d \n", number, multiplier, multiplier * number);
+            multiplier++;
+
+        } while (multiplier <= 10);
+
 
     }
 }
