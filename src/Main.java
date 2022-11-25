@@ -1,20 +1,17 @@
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        int numbers[] = {1, 2, 3, 4, 5};
+        int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-        int copyOfNumbers[] = Arrays.copyOf(numbers, numbers.length);
+        int sum = 0;
 
-        //Deprecated
-        //int copyOfNumbers[] = numbers;
+        for (int index = 0; index < numbers.length; index++) {
+            sum += numbers[index];
+            System.out.println(numbers[index]);
+        }
 
-        System.out.println(Arrays.equals(numbers, copyOfNumbers));
-
-        //Deprecated
-        System.out.println(numbers == copyOfNumbers);
+        System.out.printf("sum = %d", sum);
 
     }
 
