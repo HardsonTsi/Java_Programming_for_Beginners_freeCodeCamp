@@ -2,15 +2,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-       String litteralString1 = "abc";
-       String litteralString2  = "abc";
+        String name = "TESSI Hardson"; //%s
+        String country = "Benin";
+        int age = 20; //%d
+        String company = "freeCodeCamp";
+        double gpa = 3.8; //%f
+        char percentSign = '%'; //%c
+        boolean amITellingTheTruth = false; //%b
 
-       String objectString1 = new String("xyz");
-       String objectString2 = new String("xyz");
+        String formattedString = String.format("Je suis %s vivant au %s. J'ai %s ans et je travaille chez %s.", name,
+                country, age, company);
+        System.out.println(formattedString);
 
-        System.out.println(litteralString1 == litteralString2);
+        //Deprecated
+     /*   System.out.println("Je suis " + name + " vivant au " + country + ". J'ai " + age + " ans et je travaille chez" +
+                " " +
+                company + ".");*/
 
-        System.out.println(objectString1 == objectString2);
 
     }
 
