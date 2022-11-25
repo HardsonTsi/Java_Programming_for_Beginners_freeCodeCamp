@@ -2,17 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int number = 5;
 
-        int sum = 0;
-
-        for (int index = 0; index < numbers.length; index++) {
-            sum += numbers[index];
-            System.out.println(numbers[index]);
+        for (int multiplier = 1; multiplier <= 12; multiplier++) {
+            System.out.printf("%d X %d = %d \n", number, multiplier, multiplier * number);
         }
 
-        System.out.printf("sum = %d", sum);
-
     }
-
 }
