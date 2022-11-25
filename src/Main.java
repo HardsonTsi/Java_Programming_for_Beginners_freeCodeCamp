@@ -2,10 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int number = 5;
-
-        for (int multiplier = 1; multiplier <= 12; multiplier++) {
-            System.out.printf("%d X %d = %d \n", number, multiplier, multiplier * number);
+        for (int number = 1; number <= 50; number++) {
+            if (number % 2 == 1) {
+                System.out.println(number);
+            }
         }
 
     }
