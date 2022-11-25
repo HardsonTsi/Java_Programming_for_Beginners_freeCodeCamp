@@ -2,19 +2,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String name = "TESSI Hardson Modeste"; //%s
+        String string1 = new String("abc");
+        String string2 = new String("abc");
 
-        //name lenght
-        System.out.println(name.length());
 
-        //name is empty
-        System.out.println(name.isEmpty());
+        System.out.println(string1.equals(string2));
+        string2 = "ABC";
+        System.out.println(string1.equalsIgnoreCase(string2));
 
-        //name to uppercase
-        System.out.println(name.toUpperCase());
+        //Deprecated
+        //System.out.println(string1 == string2);
 
-        //name to lowercase
-        System.out.println(name.toLowerCase());
+
 
 
 
