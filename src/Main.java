@@ -1,24 +1,26 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        int number = 5;
-        int multiplier = 1;
+        ArrayList<Integer> numbers = new ArrayList<>();
 
-        //while
-        while (multiplier <= 10) {
-            System.out.printf("%d X %d = %d \n", number, multiplier, multiplier * number);
-            multiplier++;
-        }
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
 
+        //remove index 2 value
+        numbers.remove(2);
+        //remove index 4 value
+        numbers.remove(Integer.valueOf(4));
 
-        //do while
-        do {
-            System.out.printf("%d X %d = %d \n", number, multiplier, multiplier * number);
-            multiplier++;
+        //clear numbers
+        numbers.clear();
 
-        } while (multiplier <= 10);
-
+        System.out.println(numbers.toString());
 
     }
 }
