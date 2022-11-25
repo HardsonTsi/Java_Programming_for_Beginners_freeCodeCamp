@@ -6,17 +6,12 @@ public class Main {
 
         char[] vowels = {'u', 'o', 'i', 'e', 'a'};
 
-        Arrays.sort(vowels);
-
         int startingIndex = 1;
         int endingIndex = 4;
 
-        char key = 'e';
-        int foundItemIndex = Arrays.binarySearch(vowels, startingIndex, endingIndex, key);
+        Arrays.fill(vowels, startingIndex, endingIndex, 'x');
 
         System.out.println(Arrays.toString(vowels));
-        System.out.println(foundItemIndex);
-
 
     }
 
