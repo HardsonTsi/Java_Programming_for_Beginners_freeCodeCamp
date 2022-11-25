@@ -4,14 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        char[] vowels = {'u', 'o', 'i', 'e', 'a'};
+        int numbers[] = {1, 2, 3, 4, 5};
+
+
+        int copyOfNumbers[] = Arrays.copyOf(numbers, numbers.length);
 
         int startingIndex = 1;
         int endingIndex = 4;
 
-        Arrays.fill(vowels, startingIndex, endingIndex, 'x');
+        copyOfNumbers = Arrays.copyOfRange(numbers, startingIndex, endingIndex);
 
-        System.out.println(Arrays.toString(vowels));
+        //Deprecated
+        //int copyOfNumbers[] = numbers;
+
+        Arrays.fill(numbers, 0);
+
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(copyOfNumbers));
 
     }
 
