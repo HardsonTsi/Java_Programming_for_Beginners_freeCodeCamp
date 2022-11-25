@@ -2,22 +2,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String name = "TESSI Hardson"; //%s
-        String country = "Benin";
-        int age = 20; //%d
-        String company = "freeCodeCamp";
-        double gpa = 3.8; //%f
-        char percentSign = '%'; //%c
-        boolean amITellingTheTruth = false; //%b
+        String name = "TESSI Hardson Modeste"; //%s
 
-        String formattedString = String.format("Je suis %s vivant au %s. J'ai %s ans et je travaille chez %s.", name,
-                country, age, company);
-        System.out.println(formattedString);
+        //name lenght
+        System.out.println(name.length());
 
-        //Deprecated
-     /*   System.out.println("Je suis " + name + " vivant au " + country + ". J'ai " + age + " ans et je travaille chez" +
-                " " +
-                company + ".");*/
+        //name is empty
+        System.out.println(name.isEmpty());
+
+        //name to uppercase
+        System.out.println(name.toUpperCase());
+
+        //name to lowercase
+        System.out.println(name.toLowerCase());
+
 
 
     }
