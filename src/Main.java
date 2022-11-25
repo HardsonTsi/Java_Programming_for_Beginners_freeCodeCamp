@@ -1,25 +1,33 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> numbers = new ArrayList<>();
+        HashMap<String, Integer> examScores = new HashMap<>();
 
-        numbers.add(1);
-        numbers.add(2);
-        numbers.add(3);
-        numbers.add(4);
-        numbers.add(5);
+        examScores.put("Math", 75);
+        examScores.put("Sociology", 85);
+        examScores.put("English", 95);
+        examScores.put("Bengali", 100);
+        examScores.put("Computer programming", 100);
 
-        System.out.println("before: " + numbers);
+        examScores.putIfAbsent("Math", 70);
 
-        numbers.forEach(number -> {
-            numbers.set(numbers.indexOf(number), number * 2);
-        });
+        examScores.replace("Math", 70);
 
-        System.out.println("after: " + numbers);
+        System.out.println(examScores.getOrDefault("Religion", 0));
 
+        System.out.println(examScores);
+
+        System.out.println(examScores.containsKey("Sociology"));
+        examScores.remove("Sociology");
+
+        System.out.println(examScores.containsValue(100));
+
+        examScores.clear();
+
+        System.out.println(examScores.size());
 
     }
 }
